@@ -6,11 +6,9 @@ Built on top of [sddm-astronaut-theme](https://github.com/Keyitdev/sddm-astronau
 
 ## Preview
 
-<video src="preview.mp4" controls width="100%">
+<video src="https://github.com/user-attachments/assets/2d3f732b-e154-4136-8ad3-8c53f3de8872" controls width="100%">
   Your browser/renderer can't play the embedded video — see <a href="preview.mp4">preview.mp4</a> directly.
 </video>
-
-![Preview](preview.png)
 
 ## Installation
 
