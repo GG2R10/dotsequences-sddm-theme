@@ -1,8 +1,8 @@
 # Dotsequences SDDM Theme
 
-A single-config, single-wallpaper SDDM theme for Qt6, maintained by [GG2R10](https://github.com/GG2R10).
+A cool animated SDDM theme for Qt6.
 
-Built on top of [sddm-astronaut-theme](https://github.com/Keyitdev/sddm-astronaut-theme) by [Keyitdev](https://github.com/Keyitdev), stripped down from its original multi-theme/multi-wallpaper setup into one fixed look: one background, one profile picture, one config file.
+Built using [sddm-astronaut-theme](https://github.com/Keyitdev/sddm-astronaut-theme) by [Keyitdev](https://github.com/Keyitdev) as base. 
 
 ## Preview
 
@@ -18,7 +18,7 @@ Works on Arch, Fedora and Ubuntu (untested on Void and openSUSE). Installs `sddm
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/GG2R10/dotsequences-sddm-theme/master/install.sh)"
 ```
 
-The script tells you exactly what it's about to do before asking for confirmation, and every step that needs root uses `sudo` explicitly — nothing runs silently.
+The script tells you exactly what it's about to do before asking for confirmation.
 
 ## Making it yours
 
