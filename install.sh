@@ -6,7 +6,8 @@
 ##
 ## Script works in Arch, Fedora, Ubuntu. Didn't try it in Void and openSUSE.
 
-set -euo pipefail
+set -Eeuo pipefail
+trap 'error "Installation failed (line ${LINENO}): ${BASH_COMMAND}"' ERR
 
 readonly THEME_REPO="https://github.com/GG2R10/dotsequences-sddm-theme.git"
 readonly THEME_NAME="dotsequences-sddm-theme"
@@ -53,7 +54,10 @@ confirm() {
 spin() {
     local title="$1"; shift
     if command -v gum &>/dev/null; then
-        gum spin --spinner="dot" --title="$title" -- "$@"
+        # --show-error: keep the spinner clean on success, but dump the
+        # wrapped command's stdout/stderr if it fails -- otherwise gum
+        # swallows it and the script dies with zero explanation.
+        gum spin --spinner="dot" --title="$title" --show-error -- "$@"
     else
         echo "$title"; "$@"
     fi
